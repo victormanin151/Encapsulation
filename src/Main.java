@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import menu.PrintMenu;
+import static service.RoomService.viewRooms;
 
 public class Main {
     public static void main(String[] args) {
