@@ -1,0 +1,10 @@
+[
+  {
+    "bookingId": "62b6411e-e6e1-4f28-be51-1afbef975fd0",
+    "checkInDate": "2025-12-06",
+    "checkOutDate": "2025-12-09",
+    "roomNumber": "102",
+    "roomType": "Double",
+    "totalPrice": 110.0,
+    "username": "victor"
+  }]
