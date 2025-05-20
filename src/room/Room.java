@@ -15,7 +15,24 @@ public class Room {
         return status;
     }
 
+    public void setStatus(RoomStatus status) {
+        this.status = status;
+    }
+
     public String toString() {
         return "Room " + roomNumber + " (" + type + ") - $" + pricePerNight + "/night, Status: " + status;
     }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getRoomNumber() {
+        return roomNumber;
+    }
+
+    public double getPricePerNight() {
+        return pricePerNight;
+    }
+
 }
