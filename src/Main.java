@@ -1,6 +1,8 @@
 import java.util.Scanner;
 import menu.PrintMenu;
 import static service.RoomService.viewRooms;
+
+import service.BookingService;
 import service.UserService;
 import user.User;
 
@@ -40,7 +42,7 @@ public class Main {
                         viewRooms();
                         break;
                     case 2:
-                        System.out.println("Booking room...");
+                        BookingService.bookRoom();
                         break;
                     case 3:
                         System.out.println("Cancelling booking...");
