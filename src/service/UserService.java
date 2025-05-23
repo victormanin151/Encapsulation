@@ -1,6 +1,7 @@
 package service;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import user.User;
 
@@ -15,7 +16,7 @@ public class UserService {
     private static final String USERS_FILE = "users.json";
 
     public static void registerUser(Scanner s) {
-        Gson gson = new Gson();
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
         try {
             System.out.print("Enter a username: ");
@@ -70,6 +71,7 @@ public class UserService {
             if (users != null) {
                 for (User user : users) {
                     if (user.getUsername().equalsIgnoreCase(username) && user.getPassword().equals(password)) {
+                        System.out.println("****************");
                         System.out.println("Login successful!");
                         return user;
                     }

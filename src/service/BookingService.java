@@ -1,28 +1,26 @@
 package service;
 import booking.Booking;
+import com.google.gson.GsonBuilder;
 import room.Room;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import room.RoomStatus;
+import user.User;
 
 import java.io.*;
 import java.util.*;
 
 public class BookingService {
-    public static void bookRoom() {
-        Scanner s = new Scanner(System.in);
-        Gson gson = new Gson();
+    public static void bookRoom(Scanner s, User currentUser) {
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
         try {
 
             System.out.print("Enter room type (Deluxe, Suite, Single, Double): ");
             String roomType = s.nextLine();
 
-            System.out.print("Enter check-in date (YYYY-MM-DD): ");
-            String checkInDate = s.nextLine();
-
-            System.out.print("Enter check-out date (YYYY-MM-DD): ");
-            String checkOutDate = s.nextLine();
+            System.out.print("Enter number of nights:  ");
+            double numberOfNights = Double.parseDouble(s.nextLine());
 
             FileReader reader = new FileReader("rooms.json");
             List<Room> rooms = gson.fromJson(reader, new TypeToken<List<Room>>() {}.getType());
@@ -61,19 +59,15 @@ public class BookingService {
                 return;
             }
 
-            System.out.print("Enter your username: ");
-            String username = s.nextLine();
-
             double totalPrice = selectedRoom.getPricePerNight();
 
             String bookingId = UUID.randomUUID().toString();
             Booking booking = new Booking(
                     bookingId,
-                    username,
+                    currentUser.getUsername(),
                     selectedRoom.getRoomNumber(),
                     selectedRoom.getType(),
-                    checkInDate,
-                    checkOutDate,
+                    numberOfNights,
                     totalPrice
             );
 
@@ -83,6 +77,9 @@ public class BookingService {
                 FileReader bookingReader = new FileReader(bookingsFile);
                 bookings = gson.fromJson(bookingReader, new TypeToken<List<Booking>>() {}.getType());
                 bookingReader.close();
+            }
+            if (bookings == null) {
+                bookings = new ArrayList<>();
             }
 
             bookings.add(booking);

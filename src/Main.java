@@ -42,7 +42,7 @@ public class Main {
                         viewRooms();
                         break;
                     case 2:
-                        BookingService.bookRoom();
+                        BookingService.bookRoom(s, currentUser);
                         break;
                     case 3:
                         System.out.println("Cancelling booking...");

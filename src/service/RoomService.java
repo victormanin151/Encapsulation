@@ -1,5 +1,6 @@
 package service;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import room.Room;
 
@@ -9,7 +10,7 @@ import java.util.List;
 public class RoomService {
     public static void viewRooms() {
         try {
-            Gson gson = new Gson();
+            Gson gson = new GsonBuilder().setPrettyPrinting().create();
             FileReader reader = new FileReader("rooms.json");
 
             List<Room> rooms = gson.fromJson(reader, new TypeToken<List<Room>>() {}.getType());
