@@ -141,7 +141,7 @@ public class BookingService {
             System.out.println("Your bookings:");
             for (Booking b : userBookings) {
                 System.out.println("Booking ID: " + b.getBookingId() + " | Room: " + b.getRoomNumber() +
-                        " | for " + b.getNumberOfNights());
+                        " | for " +(int) b.getNumberOfNights() + " night(s)");
             }
 
             System.out.print("Enter the Booking ID to cancel: ");

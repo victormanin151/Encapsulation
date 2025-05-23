@@ -16,10 +16,9 @@ public class PrintMenu{
             System.out.println("Please choose an option:");
             System.out.println("1. View Available Rooms");
             System.out.println("2. Book a Room");
-            System.out.println("3. Show existing Bookings");
-            System.out.println("4. Cancel Booking");
-            System.out.println("5. Logout");
-            System.out.println("6. Exit");
+            System.out.println("3. Cancel Booking");
+            System.out.println("4. Logout");
+            System.out.println("5. Exit");
             System.out.print("Your choice: ");
         }
     }

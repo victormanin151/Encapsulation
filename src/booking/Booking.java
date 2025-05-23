@@ -23,7 +23,7 @@ public class Booking {
 
     public String toString() {
         return "Booking ID: " + bookingId + "\nUser: " + username + "\nRoom: " + roomNumber +
-                " (" + roomType + ")\n:for " + numberOfNights + "number of night." +
+                " (" + roomType + ")\nBooked for " + (int) numberOfNights + " night(s)." +
                 "\nTotal: $" + totalPrice*numberOfNights;
     }
 

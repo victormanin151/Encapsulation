@@ -9,8 +9,6 @@ public class Room {
     private int maxOccupancy;
     private String[] amenities;
 
-    //public Room (String roomNumber, String type,double pricePerNight)
-
     public RoomStatus getStatus() {
         return status;
     }
