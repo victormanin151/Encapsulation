@@ -1,1 +1,137 @@
-[{"roomNumber":"101","type":"Single","pricePerNight":80.0,"cancellationFee":10.0,"status":"AVAILABLE","maxOccupancy":1,"amenities":["WiFi","Desk"]},{"roomNumber":"102","type":"Double","pricePerNight":110.0,"cancellationFee":15.0,"status":"BOOKED","maxOccupancy":2,"amenities":["WiFi","TV","Mini Fridge"]},{"roomNumber":"103","type":"Deluxe","pricePerNight":150.0,"cancellationFee":25.0,"status":"BOOKED","maxOccupancy":2,"amenities":["WiFi","TV","Mini Bar","Balcony"]},{"roomNumber":"201","type":"Single","pricePerNight":85.0,"cancellationFee":10.0,"status":"AVAILABLE","maxOccupancy":1,"amenities":["WiFi","Desk","City View"]},{"roomNumber":"202","type":"Suite","pricePerNight":220.0,"cancellationFee":40.0,"status":"BOOKED","maxOccupancy":4,"amenities":["WiFi","TV","Jacuzzi","Sea View","Balcony"]},{"roomNumber":"203","type":"Double","pricePerNight":115.0,"cancellationFee":15.0,"status":"AVAILABLE","maxOccupancy":2,"amenities":["WiFi","TV","Coffee Maker"]},{"roomNumber":"301","type":"Deluxe","pricePerNight":155.0,"cancellationFee":30.0,"status":"MAINTENANCE","maxOccupancy":2,"amenities":["WiFi","TV","Mini Bar","Bathtub"]},{"roomNumber":"302","type":"Single","pricePerNight":78.0,"cancellationFee":10.0,"status":"AVAILABLE","maxOccupancy":1,"amenities":["WiFi","Desk"]},{"roomNumber":"303","type":"Suite","pricePerNight":240.0,"cancellationFee":50.0,"status":"BOOKED","maxOccupancy":4,"amenities":["WiFi","TV","Jacuzzi","Fireplace","Balcony"]},{"roomNumber":"401","type":"Double","pricePerNight":118.0,"cancellationFee":18.0,"status":"AVAILABLE","maxOccupancy":2,"amenities":["WiFi","TV","Iron"]},{"roomNumber":"402","type":"Deluxe","pricePerNight":160.0,"cancellationFee":30.0,"status":"BOOKED","maxOccupancy":3,"amenities":["WiFi","TV","Mini Bar","Balcony"]},{"roomNumber":"403","type":"Single","pricePerNight":82.0,"cancellationFee":10.0,"status":"AVAILABLE","maxOccupancy":1,"amenities":["WiFi","Desk"]},{"roomNumber":"501","type":"Suite","pricePerNight":250.0,"cancellationFee":60.0,"status":"AVAILABLE","maxOccupancy":4,"amenities":["WiFi","TV","Jacuzzi","Balcony","Kitchenette"]},{"roomNumber":"502","type":"Double","pricePerNight":120.0,"cancellationFee":20.0,"status":"MAINTENANCE","maxOccupancy":2,"amenities":["WiFi","TV","Mini Fridge"]},{"roomNumber":"503","type":"Deluxe","pricePerNight":170.0,"cancellationFee":35.0,"status":"BOOKED","maxOccupancy":3,"amenities":["WiFi","TV","Mini Bar","Balcony","City View"]}]
+[
+  {
+    "roomNumber": "101",
+    "type": "Single",
+    "pricePerNight": 80.0,
+    "cancellationFee": 10.0,
+    "status": "AVAILABLE",
+    "maxOccupancy": 1,
+    "amenities": ["WiFi", "Desk"]
+  },
+  {
+    "roomNumber": "102",
+    "type": "Double",
+    "pricePerNight": 110.0,
+    "cancellationFee": 15.0,
+    "status": "BOOKED",
+    "maxOccupancy": 2,
+    "amenities": ["WiFi", "TV", "Mini Fridge"]
+  },
+  {
+    "roomNumber": "103",
+    "type": "Deluxe",
+    "pricePerNight": 150.0,
+    "cancellationFee": 25.0,
+    "status": "BOOKED",
+    "maxOccupancy": 2,
+    "amenities": ["WiFi", "TV", "Mini Bar", "Balcony"]
+  },
+  {
+    "roomNumber": "201",
+    "type": "Single",
+    "pricePerNight": 85.0,
+    "cancellationFee": 10.0,
+    "status": "AVAILABLE",
+    "maxOccupancy": 1,
+    "amenities": ["WiFi", "Desk", "City View"]
+  },
+  {
+    "roomNumber": "202",
+    "type": "Suite",
+    "pricePerNight": 220.0,
+    "cancellationFee": 40.0,
+    "status": "BOOKED",
+    "maxOccupancy": 4,
+    "amenities": ["WiFi", "TV", "Jacuzzi", "Sea View", "Balcony"]
+  },
+  {
+    "roomNumber": "203",
+    "type": "Double",
+    "pricePerNight": 115.0,
+    "cancellationFee": 15.0,
+    "status": "AVAILABLE",
+    "maxOccupancy": 2,
+    "amenities": ["WiFi", "TV", "Coffee Maker"]
+  },
+  {
+    "roomNumber": "301",
+    "type": "Deluxe",
+    "pricePerNight": 155.0,
+    "cancellationFee": 30.0,
+    "status": "MAINTENANCE",
+    "maxOccupancy": 2,
+    "amenities": ["WiFi", "TV", "Mini Bar", "Bathtub"]
+  },
+  {
+    "roomNumber": "302",
+    "type": "Single",
+    "pricePerNight": 78.0,
+    "cancellationFee": 10.0,
+    "status": "AVAILABLE",
+    "maxOccupancy": 1,
+    "amenities": ["WiFi", "Desk"]
+  },
+  {
+    "roomNumber": "303",
+    "type": "Suite",
+    "pricePerNight": 240.0,
+    "cancellationFee": 50.0,
+    "status": "BOOKED",
+    "maxOccupancy": 4,
+    "amenities": ["WiFi", "TV", "Jacuzzi", "Fireplace", "Balcony"]
+  },
+  {
+    "roomNumber": "401",
+    "type": "Double",
+    "pricePerNight": 118.0,
+    "cancellationFee": 18.0,
+    "status": "AVAILABLE",
+    "maxOccupancy": 2,
+    "amenities": ["WiFi", "TV", "Iron"]
+  },
+  {
+    "roomNumber": "402",
+    "type": "Deluxe",
+    "pricePerNight": 160.0,
+    "cancellationFee": 30.0,
+    "status": "BOOKED",
+    "maxOccupancy": 3,
+    "amenities": ["WiFi", "TV", "Mini Bar", "Balcony"]
+  },
+  {
+    "roomNumber": "403",
+    "type": "Single",
+    "pricePerNight": 82.0,
+    "cancellationFee": 10.0,
+    "status": "AVAILABLE",
+    "maxOccupancy": 1,
+    "amenities": ["WiFi", "Desk"]
+  },
+  {
+    "roomNumber": "501",
+    "type": "Suite",
+    "pricePerNight": 250.0,
+    "cancellationFee": 60.0,
+    "status": "AVAILABLE",
+    "maxOccupancy": 4,
+    "amenities": ["WiFi", "TV", "Jacuzzi", "Balcony", "Kitchenette"]
+  },
+  {
+    "roomNumber": "502",
+    "type": "Double",
+    "pricePerNight": 120.0,
+    "cancellationFee": 20.0,
+    "status": "MAINTENANCE",
+    "maxOccupancy": 2,
+    "amenities": ["WiFi", "TV", "Mini Fridge"]
+  },
+  {
+    "roomNumber": "503",
+    "type": "Deluxe",
+    "pricePerNight": 170.0,
+    "cancellationFee": 35.0,
+    "status": "BOOKED",
+    "maxOccupancy": 3,
+    "amenities": ["WiFi", "TV", "Mini Bar", "Balcony", "City View"]
+  }
+]
