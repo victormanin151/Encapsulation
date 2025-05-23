@@ -1,10 +1,1 @@
-[
-  {
-    "bookingId": "0b787d23-4bd7-4cd8-b665-9f154595ea91",
-    "username": "victor",
-    "roomNumber": "102",
-    "roomType": "Double",
-    "numberOfNights": 5.0,
-    "totalPrice": 110.0
-  }
-]
+[{"bookingId":"b4138869-018d-44ee-afd1-f6c5625698c2","username":"victor","roomNumber":"203","roomType":"Double","numberOfNights":3.0,"totalPrice":115.0}]

@@ -26,4 +26,20 @@ public class Booking {
                 " (" + roomType + ")\n:for " + numberOfNights + "number of night." +
                 "\nTotal: $" + totalPrice*numberOfNights;
     }
+
+    public String getRoomNumber() {
+        return roomNumber;
+    }
+
+    public String getBookingId(){
+        return bookingId;
+    }
+
+    public double getNumberOfNights(){
+        return numberOfNights;
+    }
+
+    public Object getUsername() {
+        return username;
+    }
 }

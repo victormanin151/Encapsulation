@@ -45,13 +45,16 @@ public class Main {
                         BookingService.bookRoom(s, currentUser);
                         break;
                     case 3:
-                        System.out.println("Cancelling booking...");
+                        System.out.println("Show existing bookings");
                         break;
                     case 4:
+                        BookingService.cancelBooking(s, currentUser);
+                        break;
+                    case 5:
                         System.out.println("Logging out...");
                         currentUser = null;
                         break;
-                    case 5:
+                    case 6:
                         run = false;
                         System.out.println("Exiting program. Goodbye!");
                         break;
